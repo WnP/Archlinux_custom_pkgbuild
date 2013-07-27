@@ -5,6 +5,7 @@
 # Contributor: Masutu Subric <masutu.arch at googlemail dot com>
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 # Contributor: Jason Plum <jplum@archlinuxarm.org>
+# Contributor: Steeve Chailloux <steevechailloux at gmail dot com>
 
 pkgname=nodejs_arm_pi
 pkgver=0.8.21
