@@ -41,4 +41,8 @@ build() {
   export PATH ;
 }
 
+install() {
+  cp ${srcdir} /usr/
+}
+
 # vim:set ts=2 sw=2 et:
