@@ -48,7 +48,7 @@ set_flags_for_arm() {
 }
 
 build() {
-  cd node-v${pkgver}
+  cd node-v${pkgver}-linux-arm-pi
 
   msg 'fixing for python2 name'
   find -type f -exec sed -e 's_^#!/usr/bin/env python$_&2_' -e 's_^\(#!/usr/bin/python2\).[45]$_\1_' -e 's_^#!/usr/bin/python$_&2_' -e "s_'python'_'python2'_" -i {} \;
@@ -85,13 +85,13 @@ build() {
 }
 
 check() {
-  cd node-v${pkgver}
+  cd node-v${pkgver}-linux-arm-pi
 
   make test || true
 }
 
 package() {
-  cd node-v${pkgver}
+  cd node-v${pkgver}-linux-arm-pi
 
   # suppress re-compile(with out customized flags) by 'make install'.
   set_flags_for_arm
