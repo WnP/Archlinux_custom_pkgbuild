@@ -42,7 +42,7 @@ build() {
 }
 
 package() {
-  make DESTDIR="$pkgdir/" install
+  install -d $srcdir $pkgdir/usr
 }
 
 # vim:set ts=2 sw=2 et:
