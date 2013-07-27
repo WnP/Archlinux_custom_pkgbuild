@@ -42,7 +42,7 @@ build() {
 }
 
 package() {
-  install -Dm755 $srcdir $pkgdir/usr
+  install -Dm755 "$srcdir" "$pkgdir"/usr
 }
 
 # vim:set ts=2 sw=2 et:
